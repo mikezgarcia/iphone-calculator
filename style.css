@@ -19,7 +19,7 @@ button{
     text-align: start;
     text-indent: 1em;
 }
-#time{
+#timeNow{
     text-align: end;
     margin-top: 1vh;
     font-size: x-small;  
