@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+body{
+    margin-top: 3vh;
+}
+button{
+    height: 60px;
+    width: 60px;
+}
+.icon{
+    color: whitesmoke;
+}
+.zero{
+    width: 130px;
+    border-radius: 50px;
+    text-align: start;
+    text-indent: 1em;
+}
+#time{
+    text-align: end;
+    margin-top: 1vh;
+    font-size: x-small;  
+}
+#phoneDisplay{
+    background-image: url("assets/iphone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 620px;
+
+    
+}
+#phoneContainer{
+    background-color: black;
+    border-radius: 35px;
+    height: 590px;
+    width: 280px;
+    
+}
+#calResult{
+    font-size: 5em;
+    color: whitesmoke;
+}
+
