@@ -28,41 +28,41 @@
             </div>
             <!-- Row 2 Result Display  -->
             <p id="calResult" class="d-flex flex-column-reverse align-items-end flex-fill w-100 m-0 p-1">
-               123,456
+               
             </p>
             <!-- Row 3 Buttons  -->
             <div class="d-flex align-items-baseline">
-               <button type="button" class="operatorBtn m-1 btn btn-secondary rounded-circle">C</button>
-               <button type="button" class="operatorBtn m-1 btn btn-secondary rounded-circle">&#8274</button>
-               <button type="button" class="operatorBtn m-1 btn btn-secondary rounded-circle">&#177</button>
-               <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle">&#247</button>
+               <button type="button" class="operatorBtn m-1 btn btn-secondary rounded-circle" onclick="operationClicked('clear')">C</button>
+               <button type="button" class="operatorBtn m-1 btn btn-secondary rounded-circle" onclick="operationClicked('percent')">&#8274</button> <!-- Percent Button-->
+               <button type="button" class="operatorBtn m-1 btn btn-secondary rounded-circle" onclick="operationClicked('plus-minus')">&#177</button> <!-- Plus/Minus Button-->
+               <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle" onclick="operationClicked('divide')">&#247</button> <!-- Divide Button-->
             </div>
 
             <div class="d-flex align-items-baseline">
-                <button type="button" class="m-1 btn btn-dark rounded-circle">7</button>
-                <button type="button" class="m-1 btn btn-dark rounded-circle">8</button>
-                <button type="button" class="m-1 btn btn-dark rounded-circle">9</button>
-                <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle">&#215</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="clickedNum(7)">7</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="clickedNum(8)">8</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="clickedNum(9)">9</button>
+                <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle" onclick="operationClicked('multiply')">&#215</button> <!-- Multiply Button-->
              </div>
 
              <div class="d-flex align-items-baseline">
-                <button type="button" class="m-1 btn btn-dark rounded-circle">4</button>
-                <button type="button" class="m-1 btn btn-dark rounded-circle">5</button>
-                <button type="button" class="m-1 btn btn-dark rounded-circle">6</button>
-                <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle">&#8722</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="clickedNum(4)">4</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="clickedNum(5)">5</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="clickedNum(6)">6</button>
+                <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle" onclick="operationClicked('minus')">&#8722</button> <!-- Minus Button-->
              </div>
 
              <div class="d-flex align-items-baseline">
-                <button type="button" class="m-1 btn btn-dark rounded-circle">1</button>
-                <button type="button" class="m-1 btn btn-dark rounded-circle">2</button>
-                <button type="button" class="m-1 btn btn-dark rounded-circle">3</button>
-                <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle">&#43</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="clickedNum(1)">1</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="clickedNum(2)">2</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="clickedNum(3)">3</button>
+                <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle" onclick="operationClicked('add')">&#43</button> <!-- Add Button-->
              </div>
 
              <div class="d-flex align-items-baseline mb-3">
-                <button type="button" class="zero m-1 btn btn-dark">0</button>
-                <button type="button" class="m-1 btn btn-dark rounded-circle">.</button>
-                <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle">&#61</button>
+                <button type="button" class="zero m-1 btn btn-dark" onclick="clickedNum(0)">0</button>
+                <button type="button" class="m-1 btn btn-dark rounded-circle" onclick="operationClicked('decimal')">.</button><!-- Decimal Point Button-->
+                <button type="button" class="operatorBtn m-1 btn btn-warning rounded-circle" onclick="operationClicked('equal')">&#61</button> <!-- EQUAL Button-->
              </div>
 
         </div>
