@@ -25,7 +25,7 @@ button{
     font-size: x-small;  
 }
 #phoneDisplay{
-    background-image: url("assets/iphone.png");
+    background-image: url("../assets/iphone.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 620px;
